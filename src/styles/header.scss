@@ -1,0 +1,266 @@
+.header {
+  height: 880px;
+  background-color: linear-gradient(101.72deg,
+  rgba(250, 178, 152, 0.48) 4.77%,
+  #f4ded6 28.36%,
+  #f8eae5 88.9%,
+  rgba(255, 255, 255, 0) 101.84%);
+}
+
+.header__navigation-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+
+.header__logo {
+  margin-left: 60px;
+
+  &-img {
+    margin-top: 38px;
+  }
+}
+
+.header__nav {
+  margin-top: 38px;
+  width: 660px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  &-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    border-bottom: 1px solid inherit;
+
+    &:hover {
+      border-bottom: 1px solid #8a5137;
+    }
+  }
+
+  &-href {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      color: #8a5137;
+    }
+  }
+}
+
+.header__nav-mobile {
+  display: none;
+  margin-top: 14px;
+  margin-left: 19px;
+  margin-right: 69px;
+}
+
+.header__nav-mobileHref {
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.header__glass {
+  display: none;
+  margin-top: 15px;
+  margin-right: 23px;
+}
+
+.header__basket {
+  margin-right: 55px;
+
+  &-img {
+    margin-top: 38px;
+    transition: $transition-time;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &-circle {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 73px;
+    right: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.header__content-wrapper {
+  background-image: url("../images/two_girls.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  padding-top: 215px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.header__content-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 49px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.header__content-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 400px;
+  margin-bottom: 35px;
+}
+
+.button {
+  width: 316px;
+  height: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: $transition-time;
+
+  &:hover {
+    background-color: inherit;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .header {
+    height: 550px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__navigation-wrapper {
+    justify-content: space-between;
+  }
+
+  .header__nav-mobile {
+    display: block;
+  }
+
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .header__logo-img {
+    margin-top: 15px;
+    width: 122px;
+    margin-right: 59px;
+  }
+
+  .header__basket-img {
+    margin-top: 13px;
+  }
+
+  .header__basket-circle {
+    top: 48px;
+    right: 5px;
+  }
+
+  .header__glass {
+    display: block;
+  }
+
+  .header__content-wrapper {
+    position: relative;
+    margin-right: 0;
+    background-image: none;
+    padding-top: 140px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -40px;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: url("../images/two_girls.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+  }
+
+  .header__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__content-heading {
+    width: 335px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .header__content-text {
+    width: 311px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    width: 335px;
+    height: 54px;
+  }
+}

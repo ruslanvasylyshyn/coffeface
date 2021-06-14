@@ -1,0 +1,142 @@
+.howToUse__bigImg {
+  background-image: url("../images/three_girls.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howToUse__bigImg-title {
+  width: 450px;
+  height: 319px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
+
+.howToUse__title {
+  background: #fcd0c0;
+  height: 533px;
+
+  &-text {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 125px;
+    margin-bottom: 49px;
+  }
+}
+
+.howToUse__cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.howToUse__card {
+  width: 124px;
+  height: 124px;
+  background: #fff;
+  border: 1px solid #8a5137;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: $transition-time;
+
+  &:hover {
+    background: #fcd0c0;
+    transform: scale(1.2);
+  }
+}
+
+.howToUse__card-img {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.howToUse__card-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (max-width: 400px) {
+  .howToUse__bigImg {
+    height: 569px;
+    background: url("../images/AK8I5384-edit2.png"),
+      linear-gradient(170.22deg, #fef6f3 14.37%,
+      rgba(254, 246, 243, 0) 104.42%);
+    background-size: contain;
+    background-position: bottom;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+  }
+
+  .howToUse__bigImg-title {
+    width: 300px;
+    height: 0;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000;
+    margin-top: -450px;
+  }
+
+  .howToUse__title {
+    height: 673px;
+  }
+
+  .howToUse__cards {
+    flex-direction: column;
+  }
+
+  .howToUse__title-text {
+    padding-top: 57px;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 150%;
+    margin-bottom: 32px;
+  }
+
+  .howToUse__card {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 16px;
+  }
+
+  .howToUse__card-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .howToUse__card-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 32px;
+  }
+}

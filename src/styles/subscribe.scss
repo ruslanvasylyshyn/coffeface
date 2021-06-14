@@ -1,0 +1,125 @@
+.subscribe__section {
+  height: 568px;
+  background: linear-gradient(76.3deg, rgba(252, 209, 194, 0.48) -41.01%,
+  rgba(252, 209, 194, 0.28) 45.83%, rgba(255, 255, 255, 0) 106.87%),
+    url("../images/guy.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  mix-blend-mode: multiply;
+  display: flex;
+}
+
+.subscribe__section-info {
+  width: 736px;
+  margin-left: 133px;
+}
+
+.subscribe__section-heading {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 150%;
+  padding-top: 104px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.subscribe__section-title {
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 37px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subscribe__section-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__section-input {
+  width: 315px;
+  height: 70px;
+  border: 1px solid #000;
+  background-color: inherit;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding-left: 22px;
+
+  &::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.subscribe__section-button {
+  width: 203px;
+}
+
+@media screen and (max-width: 400px) {
+  .subscribe__section {
+    height: 850px;
+    background: linear-gradient(76.3deg, rgba(252, 209, 194, 0.48) -41.01%,
+    rgba(252, 209, 194, 0.28) 45.83%,
+    rgba(255, 255, 255, 0) 106.87%),
+      url("../images/guy.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .subscribe__section-info {
+    margin-left: 0;
+    width: 375px;
+  }
+
+  .subscribe__section-heading {
+    width: 335px;
+    padding-top: 53px;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 150%;
+    margin: 0 auto 15px;
+  }
+
+  .subscribe__section-title {
+    width: 335px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 0 auto 10px;
+  }
+
+  .subscribe__section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe__section-input {
+    width: 335px;
+    height: 54px;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  .subscribe__section-button {
+    width: 335px;
+    height: 54px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

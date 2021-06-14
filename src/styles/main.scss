@@ -1,0 +1,25 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "reset";
+
+body {
+  background: $c-gray;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  transition: width $transition-time;
+}
+
+@import "advertising";
+@import "header";
+@import "blackSection";
+@import "pads";
+@import "howToUse";
+@import "testimonials";
+@import "blog";
+@import "subscribe";
+@import "coffeFace";
+@import "footer";

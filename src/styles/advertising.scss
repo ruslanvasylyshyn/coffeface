@@ -1,0 +1,30 @@
+.advertising {
+  background-color: #000;
+}
+
+.advertising__container {
+  height: 38px;
+  text-align: center;
+}
+
+.advertising-link {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 38px;
+  text-decoration: none;
+  transition: $transition-time;
+
+  &:hover {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .advertising-link {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 38px;
+  }
+}
